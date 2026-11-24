@@ -21,16 +21,16 @@
 ## ----------------------------------------------------------------------------
 
 #
-# ONLY EDIT THIS FILE IN github.com/cloudposse/terraform-null-label
+# ONLY EDIT THIS FILE IN github.com/raringgroup/terraform-null-context
 # All other instances of this file should be a copy of that one
 #
 #
-# Copy this file from https://github.com/cloudposse/terraform-null-label/blob/master/exports/context.tf
+# Copy this file from https://github.com/raringgroup/terraform-null-context/blob/develop/exports/_context.tf
 # and then place it in your Terraform module to automatically get
-# Cloud Posse's standard configuration inputs suitable for passing
-# to Cloud Posse modules.
+# Raring Group's standard configuration inputs suitable for passing
+# to Raring Group modules.
 #
-# curl -sL https://raw.githubusercontent.com/cloudposse/terraform-null-label/master/exports/context.tf -o context.tf
+# curl -sL https://raw.githubusercontent.com/raringgroup/terraform-null-context/develop/exports/_context.tf -o _context.tf
 #
 # Modules should access the whole context as `module.this.context`
 # to get the input variables with nulls for defaults,
@@ -43,8 +43,7 @@
 #
 
 module "context" {
-  #  source  = "SevenPico/context/null"
-  #  version = "0.0.2" # requires Terraform >= 0.13.0
+  # source = "git::https://github.com/raringgroup/terraform-null-context.git?ref=v0.1.0"
   source = "../../"
 
   enabled             = var.enabled
@@ -71,7 +70,7 @@ module "context" {
   context = var.context
 }
 
-# Copy contents of cloudposse/terraform-null-label/variables.tf here
+# Copy contents of terraform-null-context/variables.tf here
 
 variable "context" {
   type = any
