@@ -19,6 +19,8 @@
 ##  This file contains code written only by Raring Group LLC
 ## ----------------------------------------------------------------------------
 
+# Intentional: this example uses the upstream registry label module on purpose,
+# to verify that `module.context.legacy` stays compatible with legacy label modules.
 module "legacy_label" {
   source  = "registry.terraform.io/cloudposse/label/null"
   version = "0.25.0" # requires Terraform >= 0.13.0

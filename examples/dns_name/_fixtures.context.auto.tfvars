@@ -21,7 +21,7 @@
 ## ----------------------------------------------------------------------------
 
 enabled     = true
-namespace   = "7pi"
+namespace   = "example"
 tenant      = "Foo"
 project     = "Project 1"
 region      = "us-east-1"
@@ -40,6 +40,6 @@ tags        = { Compliance : "none" }
 #descriptor_formats  = var.descriptor_formats
 #labels_as_tags      = var.labels_as_tags
 dns_name_format = "$${name}.$${domain_name}"
-domain_name     = "sevenpico.com"
+domain_name     = "example.com"
 
 
