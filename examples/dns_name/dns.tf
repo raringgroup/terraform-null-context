@@ -1,6 +1,5 @@
 ## ----------------------------------------------------------------------------
 ##  Copyright 2026 Raring Group LLC
-##  Copyright 2020-2022 Cloud Posse, LLC
 ##
 ##  Licensed under the Apache License, Version 2.0 (the "License");
 ##  you may not use this file except in compliance with the License.
@@ -21,7 +20,7 @@
 ## ----------------------------------------------------------------------------
 
 module "dns_context" {
-  source = "../../"
+  source  = "../../"
   context = module.context.self
-  name = "hello"
+  name    = "hello"
 }

@@ -1,6 +1,6 @@
 ## ----------------------------------------------------------------------------
-##  Copyright 2023 SevenPico, Inc.
-##  Copyright 2020-2022 Cloud Posse, LLC
+##  Copyright 2026 Raring Group LLC
+##  Copyright 2017-2020 Cloud Posse, LLC
 ##
 ##  Licensed under the Apache License, Version 2.0 (the "License");
 ##  you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 
 ## ----------------------------------------------------------------------------
 ##  ./examples/dns_name/_context.tf
-##  This file contains code modified by SevenPico, Inc.
+##  This file contains code modified by Raring Group LLC from upstream cloudposse/terraform-null-label
 ## ----------------------------------------------------------------------------
 
 #
@@ -43,8 +43,8 @@
 #
 
 module "context" {
-#  source  = "SevenPico/context/null"
-#  version = "0.0.2" # requires Terraform >= 0.13.0
+  #  source  = "SevenPico/context/null"
+  #  version = "0.0.2" # requires Terraform >= 0.13.0
   source = "../../"
 
   enabled             = var.enabled
